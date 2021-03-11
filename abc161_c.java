@@ -12,11 +12,14 @@ javac -encoding utf-8 Main.java */
 class abc161_c{
   public static void main(String[] args){
     Scanner sc = new Scanner(System.in);
-    int N = sc.nextInt();
-    int K = sc.nextInt();
-    // 最小値まで引くのは余りと等しい。余り「N % K」
-    // 「K-余り」が「余り」より小さい時、「K-余り」が最小値
-    int x = Math.min(N % K, K - N % K);
+    // 10^18なのでlong
+    long N = sc.nextLong();
+    long K = sc.nextLong();
+
+    // 絶対値なので場合分け
+    // 正：x >= K は、x-K 負に行く直前は余りと等しい。余り「N % K」
+    // 負：x < K は、K-x  K-余り「N % K」
+    long x = Math.min(N % K, K - N % K);
 
     System.out.println(x);
   }
