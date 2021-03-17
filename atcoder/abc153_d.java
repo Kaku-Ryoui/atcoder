@@ -12,8 +12,7 @@ import java.util.*;
 カラカルがモンスターに勝つまでに行う攻撃の回数の最小値を求めてください。
 制約
 ・1≤H≤10^12
-・入力中のすべての値は整数である。
-javac -encoding utf-8 Main.java */
+・入力中のすべての値は整数である。*/
 
 class abc153_d{
   public static void main(String[] args){
