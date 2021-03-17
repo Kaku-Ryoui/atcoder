@@ -23,7 +23,6 @@ class abc153_d{
     while(H > 1){
         ans *= 2;
         H /= 2;
-        
       }
 
     System.out.println(2*ans - 1);
